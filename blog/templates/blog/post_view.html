@@ -3,6 +3,6 @@
 {% block content %}
 <div class="container">
 {{post.text}}
-
+<a href="{% url 'edit_post' pk=post.pk %}">{% include './icon/pencil-fill.svg' %}</a>
 </div>
 {% endblock %}
